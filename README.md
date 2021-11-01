@@ -9,5 +9,5 @@ using Delaunay
 
 d = DelaunayNet(100 .* rand(100), 100 .* rand(100))
 
-write("net.html", Svg(100, 100, map(t->SVG.Polyline(Delaunay.triPoints(t, d.xs, d.ys)..., style=style), d.net)), inhtml=true)
+write("net.html", Svg(100, 100, map(t->SVG.Polyline(Delaunay.tri_points(t, d.xs, d.ys)...), d.net)), inhtml=true)
 
