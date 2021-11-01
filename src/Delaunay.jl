@@ -25,15 +25,7 @@ end
 
 function delaunay2d(xs, ys)
 	dt = delaunay2D.Delaunay2D()
-	for i in 1 length(xs)
-		dt.addPoint((xs[i], ys[i]))
-	end
-	map(t->(t[1]+1, t[2]+1, t[3]+1), dt.exportTriangles())
-end
-
-function delaunay2d(xs, ys)
-	dt = delaunay2D.Delaunay2D()
-	for i in 1 length(xs)
+	for i in 1:length(xs)
 		dt.addPoint((xs[i], ys[i]))
 	end
 	map(t->(t[1]+1, t[2]+1, t[3]+1), dt.exportTriangles())
