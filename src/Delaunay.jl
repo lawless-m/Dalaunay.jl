@@ -7,7 +7,7 @@ using PyCall
 const delaunay2D = PyNULL()
 
 function __init__() 
-	#pushfirst!(PyVector(pyimport("sys")["path"]), raw"SOMEWHERE")
+	pushfirst!(PyVector(pyimport("sys")["path"]), ".")
 	copy!(delaunay2D, pyimport("delaunay2D"))
 end
 
