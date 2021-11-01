@@ -7,7 +7,7 @@ using PyCall
 const delaunay2D = PyNULL()
 
 function __init__() 
-	pushfirst!(PyVector(pyimport("sys")["path"]), ".")
+	#pushfirst!(PyVector(pyimport("sys")["path"]), ".") seems this wasn't necessary
 	copy!(delaunay2D, pyimport("delaunay2D"))
 end
 
