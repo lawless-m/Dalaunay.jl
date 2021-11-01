@@ -7,7 +7,7 @@ using PyCall
 const delaunay2D = PyNULL()
 
 function __init__() 
-	#pushfirst!(PyVector(pyimport("sys")["path"]), ".") seems this wasn't necessary
+	pushfirst!(PyVector(pyimport("sys")["path"]), ".") 
 	copy!(delaunay2D, pyimport("delaunay2D"))
 end
 
@@ -19,7 +19,7 @@ struct DelaunayNet
 		if delaunay2D == PyNULL()
 			__init__()
 		end
-		new(xs, ys, delaunay2d(points))
+		new(xs, ys, delaunay2d(xs, ys))
 	end
 end
 
