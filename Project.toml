@@ -1,0 +1,13 @@
+name = "Delaunay"
+uuid = "a2be12f5-2f51-40bb-a772-5b60e2ca1c9b"
+authors = ["Matt Lawless"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
