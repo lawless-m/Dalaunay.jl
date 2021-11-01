@@ -3,6 +3,9 @@ uuid = "a2be12f5-2f51-40bb-a772-5b60e2ca1c9b"
 authors = ["Matt Lawless"]
 version = "0.1.0"
 
+[deps]
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+
 [compat]
 julia = "1"
 
