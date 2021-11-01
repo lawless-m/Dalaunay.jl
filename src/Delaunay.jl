@@ -11,7 +11,7 @@ function __init__()
 		pushfirst!(PyVector(pyimport("sys")["path"]), ENV["Delaunay2D"])
 		copy!(xlsxwriter, pyimport("delaunay2D"))
 	else
-		throw("Need to set ENV[\"Delaunay2D\"] to the path where the delaunay2D folder can be found. For me that is: raw\"C:\\Users\\matthew.heath\\repos\\Delaunay.jl\\src" and reload or call Delaunay.__init__() ")
+		throw("Need to set ENV[\"Delaunay2D\"] to the path where the delaunay2D folder can be found. For me that is: raw\"C:\\Users\\matthew.heath\\repos\\Delaunay.jl\\src\" and reload or call Delaunay.__init__() ")
 	end
 end
 
